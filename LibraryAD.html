@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>Advanced Development</title>
     <link href ="LibraryADCSS.css" rel ="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!---Library AOS--->
     <script src = "LibraryADJS.js"></script>
     <h1>Advanced Development Libraries</h1>
 </head>
         
 <body>
-
     <div id="Top3">
         <h2> Favorieten:</h2>
         <p>
@@ -34,7 +35,7 @@ Het systeem geeft van te voren bijvoorbeeld “YYYY-MM-DD”(Year, month, day) a
 
         </p>
     </div>
-    <div id="Rest">
+    <div id="Rest"> 
         <h3>Others: </h3>
         <p>
             <b>4.	Chart JS</b> <br>
@@ -75,9 +76,20 @@ Three was een library die 3d models makkelijker maakt. Met Three zijn er veel ga
 zelfs een aantal browser spellen die ik zelf gespeeld heb. 
 Dit vond ik super interessant en op de website kun je zien wat er onder andere mee gemaakt is. <br>
 <a href ="https://threejs.org/">https://threejs.org/</a> <br><br>
-
+ 
         </p>
     </div>
-
+    <div id="AOS" data-aos="zoom-out">
+        <h2>Hoe werkt AOS?</h2>
+        <p>
+            Nou, zo dus! Dit stukje tekst heeft een stukje code van AOS (Animate On Scroll), dit maakt het voor mij enorm makkelijk om een simpele
+            animatie toe te voegen aan dit kopje. Scroll nog maar eens heen en weer! Dit heb ik toegevoegd door alleen "data-aos="zoom-out"" te schrijven. <br>
+            De link naar AOS is: <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a> <br> <br>
+        </p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!---Library AOS--->
+    <script>
+        AOS.init();
+      </script>    
 </body>
 </html>
