@@ -5,14 +5,15 @@
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>Advanced Development</title>
     <link href ="LibraryADCSS.css" rel ="stylesheet">
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" rel = "stylesheet"> <!---Library Chart--->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!---Library AOS--->
-    <script src = "LibraryADJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script> <!---Library Chart--->
     <h1>Advanced Development Libraries</h1>
 </head>
         
 <body>
     <div id="Top3">
-        <h2> Favorieten:</h2>
+        <h2> Eerste 3:</h2>
         <p>
             <b>1.	AOS – Animate On Scroll</b> <br>
 Deze library doet wat het zegt: Hij laat een animatie zien wanneer je scrolt, bijvoorbeeld voor websites met 1 lange pagina. 
@@ -87,9 +88,35 @@ Dit vond ik super interessant en op de website kun je zien wat er onder andere m
             De link naar AOS is: <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a> <br> <br>
         </p>
     </div>
+
+    <div id="Granim" data-aos="zoom-out">
+        <h2>Hoe werkt Granim?</h2>
+        <p>
+            Deze library is al de hele tijd actief. Deze maakt namelijk de achtergrond naar een veranderende gradient. Je kan zelf je vorm (Bijvoorbeeld radial,
+            diagonal, etc.) kiezen en vervolgens kleuren instellen.  <br>
+            De link naar Granim is: <a href="https://sarcadass.github.io/granim.js/examples.html">https://sarcadass.github.io/granim.js/examples.html</a> <br>
+        </p>
+    </div>
+
+    <div id="Chart" data-aos="zoom-out">
+        <h2>Hoe werkt Chart?</h2>
+        <p>
+            Hieronder zie je een voorbeeld van het gebruik van Chart. Chart leek mij erg handig. Ik wou het direct gebruiken voor iets waar ik in mijn vrije tijd 
+            mee bezig ben: Rocket League coaching. In een grafiek kan ik de ranks van spelers overzichtelijk bijhouden. (Onderstaande cijfers komen van 
+            <a href="https://rocketleague.tracker.network/live?ids=1271076")>https://rocketleague.tracker.network/live?ids=1271076</a>)  <br>
+            De link naar Chart is: <a href="https://www.chartjs.org/">https://www.chartjs.org/</a> <br> <br>
+        </p>
+    </div>
+    <canvas id="myChart" width="400" height="150"></canvas>
+
+    <canvas id="canvas-basic"></canvas>
+
+    
+    <script src="granim.min.js"></script> <!---Library Granim--->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!---Library AOS--->
     <script>
         AOS.init();
       </script>    
+     <script src = "LibraryADJS.js"></script>
 </body>
 </html>
